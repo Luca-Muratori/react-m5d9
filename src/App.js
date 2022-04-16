@@ -20,6 +20,7 @@ class App extends React.Component {
           {this.state.media.map((media) => (
             <div key={media.id}>
               <div>{media.Title}</div>
+              <img className="poster-img" alt="poster-img" src={media.Poster} />
             </div>
           ))}
         </div>
